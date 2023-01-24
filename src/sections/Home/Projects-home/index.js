@@ -86,7 +86,7 @@ const Projects = () => {
           <Col xs={12}>
             <div className="description">
               <div className="button">
-                <Button secondary className="banner-btn" title="All Projects" url="/projects">
+                <Button id="all-projects" secondary className="banner-btn" title="All Projects" url="/projects">
                   <StaticImage loading="lazy" src={projectsIcon} alt="All Layer5 Projects" height={18} />&nbsp;
                 </Button>
               </div>
