@@ -103,4 +103,4 @@ const Feature = ({ children, title, active, onClick, learnMoreLink, id, Element 
   );
 };
 
-export default Features;p
+export default Features;
