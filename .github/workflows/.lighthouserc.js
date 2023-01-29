@@ -1,7 +1,7 @@
 module.exports = {
     extends: 'lighthouse:default',
     settings: {
-      onlyAudits: [
+      skipAudits: [
         'csp-xss'
       ],
     },
