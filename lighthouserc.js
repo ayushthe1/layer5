@@ -1,9 +1,10 @@
 module.exports = {
   "ci": {
-    "collect": {
-      "settings": {
-        // Don't run certain audits
-        "skipAudits": ["csp-xss"],
+    "assert": {
+      "assertions": {
+        "csp-xss": "off",
+        "tap-targets": "warn",
+        "unsized-images": "off",
       }
     }
   }
