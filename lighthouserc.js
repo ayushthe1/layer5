@@ -1,8 +1,10 @@
 module.exports = {
-  extends: "lighthouse:default",
-  settings: {
-    skipAudits: [
-      "csp-xss",
-    ],
-  },
+  "ci": {
+    "collect": {
+      "settings": {
+        // Don't run certain audits
+        "skipAudits": ["csp-xss"],
+      }
+    }
+  }
 };
