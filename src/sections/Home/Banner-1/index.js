@@ -34,10 +34,10 @@ const Banner1 = (props) => {
             </p>
             <span className="vintage-box-container">
               <VintageBox right={true} vintageOne={true}>
-                <Button primary className="banner-btn one" title="Join in" url="/community">
+                <Button primary aria-label="join-the-community" className="banner-btn one" title="Join in" url="/community">
                   <FaMapMarkedAlt size={21} className="icon-left" />
                 </Button>
-                <Button primary className="banner-btn two" title="See Meshery" url="/cloud-native-management/meshery">
+                <Button primary className="banner-btn two" title="See Meshery" aria-label="go-to-meshery" url="/cloud-native-management/meshery">
                   <FiDownloadCloud size={21} className="icon-left" />
                 </Button>
               </VintageBox>
