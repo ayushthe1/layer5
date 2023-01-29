@@ -40,6 +40,7 @@ const SEO = ({ canonical, description,image, meta, schemaMarkup, title,children 
     <>
       <title>{seo.title}</title>
       <html lang="en" />
+      <meta httpEquiv="Content-Security-Policy" content="default-src 'self'"></meta>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta name="og:title" content={seo.title} />
