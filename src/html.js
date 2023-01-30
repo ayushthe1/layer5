@@ -7,7 +7,7 @@ export default function HTML(props) {
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta httpEquiv="Content-Security-Policy" content="script-src 'self'"></meta>
+        <meta httpEquiv="X-XSS-Protection" content="1; mode=block"></meta>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
