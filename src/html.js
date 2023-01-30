@@ -2,6 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function HTML(props) {
+  useEffect(() => {
+    document.write("<meta http-equiv='Content-Security-Policy' content='default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';'>");
+  }, []);
+
   return (
     <html lang="en" {...props.htmlAttributes}>
       <head>
