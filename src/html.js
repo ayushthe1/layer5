@@ -1,44 +1,51 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function HTML(props) {
-  return (
-    <html lang="en" {...props.htmlAttributes}>
-      <head>
-        <meta charSet="utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        {props.headComponents}
-      </head>
-      <body {...props.bodyAttributes}>
-        <script dangerouslySetInnerHTML={{
-          __html:
-            `(function() {
-							try {
-                var banner = sessionStorage.getItem('banner');
-                if (banner === null)
-                  document.body.classList.add('banner1');
-                else
-                  document.body.classList.add('banner' + banner);
-							} catch (e) {
-								return;
-							}
-					})();`,
-        }}
-        />
-        {props.preBodyComponents}
-        <div
-          key={"body"}
-          id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
-        />
-        {props.postBodyComponents}
-      </body>
-    </html>
-  );
+class HTML extends React.Component {
+  componentDidMount() {
+    document.write("<meta http-equiv='Content-Security-Policy' content=\"default-src 'self'\">");
+  }
+
+  render() {
+    return (
+      <html lang="en" {...this.props.htmlAttributes}>
+        <head>
+          <meta charSet="utf-8" />
+          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+          <meta httpEquiv="X-XSS-Protection" content="1; mode=block"></meta>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
+          {this.props.headComponents}
+        </head>
+        <body {...this.props.bodyAttributes}>
+          <script dangerouslySetInnerHTML={{
+            __html:
+              `(function() {
+                  try {
+                    var banner = sessionStorage.getItem('banner');
+                    if (banner === null)
+                      document.body.classList.add('banner1');
+                    else
+                      document.body.classList.add('banner' + banner);
+                  } catch (e) {
+                    return;
+                  }
+              })();`,
+          }}
+          />
+          {this.props.preBodyComponents}
+          <div
+            key={"body"}
+            id="___gatsby"
+            dangerouslySetInnerHTML={{ __html: this.props.body }}
+          />
+          {this.props.postBodyComponents}
+        </body>
+      </html>
+    );
+  }
 }
 
 HTML.propTypes = {
@@ -49,3 +56,5 @@ HTML.propTypes = {
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
 };
+
+export default HTML;
