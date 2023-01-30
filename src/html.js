@@ -1,11 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 export default function HTML(props) {
-  useEffect(() => {
-    document.write("<meta http-equiv='Content-Security-Policy' content='default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';'>");
-  }, []);
-
   return (
     <html lang="en" {...props.htmlAttributes}>
       <head>
@@ -15,6 +11,10 @@ export default function HTML(props) {
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self';"
         />
         {props.headComponents}
       </head>
@@ -54,3 +54,4 @@ HTML.propTypes = {
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
 };
+
