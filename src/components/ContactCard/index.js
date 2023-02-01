@@ -33,7 +33,7 @@ const ContactCard = () => {
                 <Col className="nopad" md={1} xs={1}><MdEmail className="contact-icon" size={30}></MdEmail></Col>
                 <Col md={11} xs={11}><input className="inputrow" type="email" placeholder="Email Address" name="EMAIL" id="mce-EMAIL" required /></Col>
               </Row>
-              <Button title="Subscribe" id="mc-embedded-subscribe" />
+              <Button title="Subscribe" id="mc-embedded-subscribe" aria-label="subscribe" />
             </Col>
           </Row>
         </form>
