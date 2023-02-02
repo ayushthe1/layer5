@@ -41,7 +41,7 @@ const Partner = ({ theme }) => {
             <p>Layer5 is dedicated to partnering with leading educational institutions, technology vendors, solution providers and industry experts to drive the adoption of cloud native technologies focused on the evolution of how developers write modern applications, how operators run infrastructure and how product owners manage service offerings.</p>
           </div>
           <div className="partner-button">
-            <Button primary className="partner-btn" url="mailto:partners@layer5.io?subject=Partner Program" external={true} icon={Partner_Icon} title="Become A Partner" />
+            <Button aria-label="become partner" primary className="partner-btn" url="mailto:partners@layer5.io?subject=Partner Program" external={true} icon={Partner_Icon} title="Become A Partner" />
           </div>
         </div>
       </div>
@@ -155,7 +155,7 @@ const Partner = ({ theme }) => {
             <h1>Become a Layer5 Partner</h1>
           </div>
           <div className="partner-btn-cont-body">
-            <Button primary title="BECOME A PARTNER" url="mailto:partners@layer5.io" external={true} />
+            <Button aria-label="become partner" primary title="BECOME A PARTNER" url="mailto:partners@layer5.io" external={true} />
           </div>
         </div>
       </Container>

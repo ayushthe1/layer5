@@ -96,7 +96,7 @@ const MentorshipPrograms = () => {
                       <div className="text">
                         <h2>{name}</h2>
                         <p>{description}</p>
-                        <Button primary id="learn" type="button" title="Learn More" url={buttonLink} />
+                        <Button aria-label="learn more" primary id="learn" type="button" title="Learn More" url={buttonLink} />
                       </div>
                     </Col>
                     <Col lg={6} md={6} sm={12} id="col2">

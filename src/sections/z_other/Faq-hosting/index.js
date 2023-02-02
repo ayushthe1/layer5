@@ -72,7 +72,7 @@ const Faq = () => {
               vintageTwo={true}
               position="relative"
             >
-              <Button title="Learn More" />
+              <Button title="Learn More" aria-label="learn more" />
             </VintageBox>
           </Col>
         </Row>

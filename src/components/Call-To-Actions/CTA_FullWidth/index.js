@@ -108,7 +108,7 @@ export const CTA_FullWidth = ({ alt, button_text, category, content, external_li
               <h3>{Categories[category]["Heading"]}</h3>
               <p>{Categories[category]["Content"]}</p>
             </div>
-            <Button primary title={Categories[category]["Button_Text"]} url={Categories[category]["Link"]} external={Categories[category]["Link_external"]} />
+            <Button primary aria-label={Categories[category]["Button_Text"]} title={Categories[category]["Button_Text"]} url={Categories[category]["Link"]} external={Categories[category]["Link_external"]} />
           </div>
         </>
       ) : (
@@ -119,7 +119,7 @@ export const CTA_FullWidth = ({ alt, button_text, category, content, external_li
               <h3>{heading ? heading : defaultHeading}</h3>
               <p>{content ? content : defaultContent}</p>
             </div>
-            <Button primary title={button_text ? button_text : "Join Us"} url={url ? url : defaultURL} external={external_link ? true : false} />
+            <Button aria-label="join us" primary title={button_text ? button_text : "Join Us"} url={url ? url : defaultURL} external={external_link ? true : false} />
           </div>
         </>
       )}

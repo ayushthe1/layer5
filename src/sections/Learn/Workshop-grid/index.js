@@ -104,8 +104,8 @@ const WorkshopsPage = () => {
                       <div className={content && ID === id ? "linkAndReadBtns-open" : "linkAndReadBtns"}>
                         <div className="expand">
                           {content && ID === id ?
-                            <button onClick={() => toggleActive(id)} className="readmeBtn"> Read Less <BsArrowUp className="icon" size={30} /></button> :
-                            <button onClick={() => toggleActive(id)} className="readmeBtn readmreBtn"> Read More <BsArrowDown className="icon" size={30} /></button> }
+                            <button aria-label="read less" onClick={() => toggleActive(id)} className="readmeBtn"> Read Less <BsArrowUp className="icon" size={30} /></button> :
+                            <button aria-label="read more" onClick={() => toggleActive(id)} className="readmeBtn readmreBtn"> Read More <BsArrowDown className="icon" size={30} /></button> }
                         </div>
                         <div className="externalLink">
                           <Link to={fields.slug} className="siteLink"><FaRegWindowMaximize style={{ height: "25px", width: "auto" }} /></Link>
@@ -118,7 +118,7 @@ const WorkshopsPage = () => {
             </Row>
             <Row className="rqst-workshop">
               <img src={WorkshopImage} alt="WorkshopImage" className="bottom-image" />
-              <Button primary url="mailto:support@layer5.io" external={true}>
+              <Button aria-label="workshop" primary url="mailto:support@layer5.io" external={true}>
                                 Request A Workshop
               </Button>
             </Row>

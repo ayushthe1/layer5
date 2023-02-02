@@ -283,7 +283,7 @@ const ServiceMesh = () => {
           </Row>
 
           <div className="button">
-            <Button secondary url="#form" title="Take The Full Questionaire" />
+            <Button aria-label="questionaire" secondary url="#form" title="Take The Full Questionaire" />
           </div>
         </Container>
       </div>
@@ -314,7 +314,7 @@ const ServiceMesh = () => {
           </Row>
 
           <div className="button">
-            <Button secondary url="#form" title="Take The Full Questionaire" />
+            <Button aria-label="questionaire" secondary url="#form" title="Take The Full Questionaire" />
           </div>
         </Container>
       </div>
@@ -375,7 +375,7 @@ const ServiceMesh = () => {
                 <input type="text" className="email" onKeyDown={handleKeyPress} onChange={addData3}  placeholder="Organization or Company"></input>
                 <input type="email" className="email" onKeyDown={handleKeyPress} onChange={addData}  placeholder="Email Address"></input>
                 <br/>
-                <Button secondary id="arrow-btn" type="button"  onClick={expand} title="Continue &rarr;"/>
+                <Button secondary aria-label="continue" id="arrow-btn" type="button"  onClick={expand} title="Continue &rarr;"/>
               </div>
             }
             <div className={!flag ? "blur" : ""}>
@@ -434,7 +434,7 @@ const ServiceMesh = () => {
                 {
                   !submitFlag
                     &&
-                    <Button secondary type="button" onClick={submit} title="Submit &rarr;"/>
+                    <Button aria-label="submit" secondary type="button" onClick={submit} title="Submit &rarr;"/>
                 }
                 {
                   submitFlag
@@ -454,7 +454,7 @@ const ServiceMesh = () => {
           <p>
             Service meshes provide intent-based networking for microservices describing desired behavior of the network in the face of constantly changing conditions and network topology.
           </p>
-          <Button primary className="learn" type="button" title="Learn More" url="/learn/service-mesh-books/the-enterprise-path-to-service-mesh-architectures-2nd-edition"/>
+          <Button aria-label="learn more" primary className="learn" type="button" title="Learn More" url="/learn/service-mesh-books/the-enterprise-path-to-service-mesh-architectures-2nd-edition"/>
         </Col>
         <Col xs={12} sm={6} className="book_col book_img">
           <Link to={"/learn/service-mesh-books/the-enterprise-path-to-service-mesh-architectures-2nd-edition"} className="bookLink">

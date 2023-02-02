@@ -89,7 +89,7 @@ const CommunityPage = ({ theme }) => {
                 enabling them to effectively compare different ideas and find the best solutions
                 for advancement, while building the size, diversity, and strength of the community.
               </p>
-              <Button primary title="See our community member profiles" url="/community/members" />
+              <Button aria-label="community member profiles" primary title="See our community member profiles" url="/community/members" />
             </Col>
             <Col className="slider" sm={12} lg={6}>
               <PictureSlider />
@@ -120,7 +120,7 @@ const CommunityPage = ({ theme }) => {
               <img src={theme == "dark" ? lightMeshmateIcon : MeshmateIcon} alt="MeshMate Icon" className="meshmate-img" />
               <Link className="meshmate-link" to="/community/meshmates">
                 <h3>Open Source Mentorship Program</h3>
-                <button className="icon">
+                <button className="icon" aria-label="icon">
                   <FaArrowRight />
                 </button>
               </Link>
@@ -141,7 +141,7 @@ const CommunityPage = ({ theme }) => {
                   Begin your journey by <a href="http://slack.layer5.io">joining the community Slack</a>. Then, use the resources linked in our <Link to="/community/newcomers">Contributor's Journey Map </Link>
                   and engage in the community and projects.
                 </p>
-                <Button primary title="See All Newcomers Resources" url="/community/newcomers">
+                <Button aria-label="resources" primary title="See All Newcomers Resources" url="/community/newcomers">
                   <FaUsers size={21} className="icon-left" />
                 </Button>
               </div>

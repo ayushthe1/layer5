@@ -45,7 +45,7 @@ const BannerDefault = () => {
                     </div>
                   </h3>
                   <div className="join-community">
-                    <Button primary className="join-community-button" title="Extend your control" url="/projects" />
+                    <Button aria-label="projects" primary className="join-community-button" title="Extend your control" url="/projects" />
                   </div>
                 </SectionTitle>
               </div>

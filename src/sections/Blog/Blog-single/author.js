@@ -33,7 +33,7 @@ const AboutTheAuthor = (props) => {
             <div className="authors-info-meshery">
               <h4>MeshMap</h4>
               <p>MeshMap is the world's only visual designer for Kubernetes and service mesh deployments.</p>
-              <Button secondary url="/meshmap" title="Get Started" className="cta-btn" />
+              <Button secondary url="/meshmap" aria-label="get started" title="Get Started" className="cta-btn" />
             </div>
             <div className="share-section">
               <h3>Share</h3>

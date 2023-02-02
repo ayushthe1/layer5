@@ -19,7 +19,7 @@ const DiscussCallout = () => {
                     <h2>Join the Conversation</h2>
                     <p>Ask questions, find answers and share knowledge on our Discussion Forum</p>
 
-                    <button><StaticImage className="logo" alt="Discuss" src={Discuss} /></button>
+                    <button aria-label="discuss"><StaticImage className="logo" alt="Discuss" src={Discuss} /></button>
 
                   </SectionTitle>
                 </div>

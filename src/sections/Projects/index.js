@@ -79,7 +79,7 @@ const Projects = () => {
               vintageTwo={true}
               position="relative"
             >
-              <Button className="project-btn" title="Learn More" />
+              <Button aria-label="learn more" className="project-btn" title="Learn More" />
             </VintageBox>
           </Col>
         </Row>

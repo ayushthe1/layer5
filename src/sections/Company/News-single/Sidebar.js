@@ -95,12 +95,12 @@ const NewsSidebar = (props) => {
     <NewsSidebarWrapper>
       {props.kit ?
         <a href={props.kit}>
-          <Button primary title="Press Kit" external={true}>
+          <Button aria-label="press kit" primary title="Press Kit" external={true}>
             <FiDownloadCloud size={21} className="icon-left" />
           </Button>
         </a> : ""}
       <Link to="/brand">
-        <Button secondary title="Layer5 brand kit" external={true} />
+        <Button secondary aria-label="brand kit" title="Layer5 brand kit" external={true} />
       </Link>
       <a href="mailto:press@layer5.io" target="_blank" rel="noreferrer">
         <div className="media_block">
@@ -120,7 +120,7 @@ const NewsSidebar = (props) => {
             Your friendly cloud native visual editor.
             </h3>
             <div className="chapter-link">
-              <Button primary title="Try Now!"
+              <Button aria-label="try now" primary title="Try Now!"
                 className="btn"
                 url="/meshmap"
                 external={false} />

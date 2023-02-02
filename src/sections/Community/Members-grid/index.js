@@ -89,6 +89,7 @@ const MembersGrid = (props) => {
                   <Button
                     primary
                     className="banner-btn memberProfileBtn"
+                    aria-label="community handbook"
                     title="Read the Community Handbook"
                     url="/community/handbook"
                     external={true}
@@ -100,6 +101,7 @@ const MembersGrid = (props) => {
                     secondary
                     className="banner-btn two memberProfileBtn"
                     title="Join the Community"
+                    aria-label="join us"
                     url="http://slack.layer5.io"
                   >
                     <FaUsers size={21} className="icon-left" />

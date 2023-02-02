@@ -88,13 +88,13 @@ const FeaturesSection = () => {
           </div>
           <div className="mesh-mngmnt-btn">
             <Col xs={12} sm={6} md={4}>
-              <Button secondary className="mgmt_button" title="Install" url="/cloud-native-management/meshery/getting-started" />
+              <Button aria-label="install" secondary className="mgmt_button" title="Install" url="/cloud-native-management/meshery/getting-started" />
             </Col>
             <Col xs={12} sm={6} md={4}>
-              <Button secondary className="mgmt_button" title="Manage" url="/cloud-native-management/meshery/operating-service-meshes" />
+              <Button aria-label="manage" secondary className="mgmt_button" title="Manage" url="/cloud-native-management/meshery/operating-service-meshes" />
             </Col>
             <Col xs={12} sm={6} md={4}>
-              <Button secondary className="mgmt_button" title="Patterns" url="/learn/service-mesh-books/service-mesh-patterns" />
+              <Button aria-label="patterns" secondary className="mgmt_button" title="Patterns" url="/learn/service-mesh-books/service-mesh-patterns" />
             </Col>
           </div>
         </div>

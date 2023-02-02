@@ -17,12 +17,12 @@ import AppScreenSctionWrapper from "./appScreenSection.style";
 
 const AppScreensClassic = () => {
   const ArrowLeft = ({ ...props }) => (
-    <button {...props} className="slick-arrow slick-prev-icon">
+    <button {...props} className="slick-arrow slick-prev-icon" aria-label="prev-icon">
       <IoIosArrowRoundBack />
     </button>
   );
   const ArrowRight = ({ ...props }) => (
-    <button {...props} className="slick-arrow slick-next-icon">
+    <button {...props} className="slick-arrow slick-next-icon" aria-label="next-icon">
       <IoIosArrowRoundForward />
     </button>
   );
@@ -94,7 +94,7 @@ const AppScreensClassic = () => {
           </Col>
           <Col xs={12} sm={6}>
             <div className="view-more-button">
-              <Button title="View on Google Play" />
+              <Button title="View on Google Play" aria-label="view on google play" />
             </div>
           </Col>
         </Row>

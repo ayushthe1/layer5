@@ -67,7 +67,7 @@ const Pricing = () => {
                     <span className="after">/user{monthly? "/month" : "/year"}</span>
                   </div> */}
 
-                  <Button primary className={x.button[0] === "Coming Soon" ? "price-button-disabled" : "price-button-link"} url={x.button[1]}>{x.button[0]}</Button>
+                  <Button aria-label="coming soon" primary className={x.button[0] === "Coming Soon" ? "price-button-disabled" : "price-button-link"} url={x.button[1]}>{x.button[0]}</Button>
                 </div>
               </Col>
             ))}

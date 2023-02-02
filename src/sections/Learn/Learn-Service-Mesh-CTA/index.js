@@ -47,7 +47,7 @@ const LearnServiceMeshCTA = () => {
         <Row className="section-wrapper" Vcenter>
           <Col className="content" sm={12} md={6} lg={6}>
             <h2>Learn to service mesh with interactive labs</h2>
-            <Button secondary title="Let's Learn" url="/learn/service-mesh-labs" />
+            <Button aria-label="lets learn" secondary title="Let's Learn" url="/learn/service-mesh-labs" />
           </Col>
           <Col className="image" sm={12} md={6} lg={6}>
             <StaticImage src={ServiceMeshImage} alt="Learn how to Service Mesh" objectFit="contain" />

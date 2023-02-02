@@ -96,7 +96,7 @@ const LearningPaths = () => {
           ))}
         </Row>
         <div className="see-more-button">
-          <Button primary title="Checkout all learning paths" url="/learn/learning-paths" />
+          <Button aria-label="checkout" primary title="Checkout all learning paths" url="/learn/learning-paths" />
         </div>
       </Container>
     </LearningPathsWrapper>

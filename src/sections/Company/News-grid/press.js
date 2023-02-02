@@ -86,7 +86,7 @@ const Press = () => {
                 <p>Get our brand, logo assets and more.</p>
                 <img src={FiveIcon} alt="Five Logo" height={30} /> <br />
                 <Link to="/brand">
-                  <Button secondary title="Layer5 brand kit" external={true} />
+                  <Button aria-label="brand kit" secondary title="Layer5 brand kit" external={true} />
                 </Link>
               </div>
             </Link>

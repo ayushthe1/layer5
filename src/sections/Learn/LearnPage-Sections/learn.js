@@ -188,12 +188,12 @@ const LearnSection = () => {
           <Row Hcenter className="learn-buttons-section labs">
             <Col xs={12} lg={6}>
               <Link to="/learn/service-mesh-labs" state={{ selectedIndex: 0 }}>
-                <Button secondary title="Getting started with any service mesh"/>
+                <Button aria-label="getting started" secondary title="Getting started with any service mesh"/>
               </Link>
             </Col>
             <Col xs={12} lg={6}>
               <Link to="/learn/service-mesh-labs" state={{ selectedIndex: 1 }}>
-                <Button secondary title="Managing the performance of your service mesh"/>
+                <Button aria-label="manage performance" secondary title="Managing the performance of your service mesh"/>
               </Link>
             </Col>
             <img src={OReillyLogo} alt="OReilly Logo"/>
@@ -222,7 +222,7 @@ const LearnSection = () => {
         </div>
       </div>
       <div className="learn-buttons-section">
-        <Button primary title="Checkout all the labs" url="/learn/service-mesh-labs" />
+        <Button aria-label="checkout labs" primary title="Checkout all the labs" url="/learn/service-mesh-labs" />
       </div>
     </LearnSectionWrapper>
   );

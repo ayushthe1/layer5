@@ -156,7 +156,7 @@ const Brand = () => {
           include a visual mockup of intended use.
         </p>
         <a href="/brand/brand-kit.zip">
-          <Button primary title="Download Brand Kit">
+          <Button aria-label="download" primary title="Download Brand Kit">
             <FiDownloadCloud size={21} className="icon-left" />
           </Button>
         </a>

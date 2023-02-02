@@ -169,7 +169,7 @@ const Writers = () => {
               <div className="item">
                 <p>If you’re interested in the Layer5 Writing Program, please submit your information (and proposed topic, if you have one) to get started. <i>Don't have a topic? Don't worry, we have plenty of suggestions for you.</i></p>
 
-                <Button primary className="open-modal-btn" onClick={openModal} title="Layer5 Content Form" />
+                <Button aria-label="form" primary className="open-modal-btn" onClick={openModal} title="Layer5 Content Form" />
                 <Modal
                   isOpen={modalIsOpen}
                   onRequestClose={closeModal}
@@ -178,7 +178,7 @@ const Writers = () => {
                   ariaHideApp={false}
                   contentLabel="Content Form"
                 >
-                  <Button secondary className="close-modal-btn" onClick={closeModal}> <GrFormClose /></Button>
+                  <Button aria-label="form" secondary className="close-modal-btn" onClick={closeModal}> <GrFormClose /></Button>
                   <h2 className="modal-heading">Layer5 Content Registration Form</h2>
                   <div className="content-form">
                     <ContentForm />

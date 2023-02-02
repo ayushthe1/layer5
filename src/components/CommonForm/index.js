@@ -153,7 +153,7 @@ const CommonForm = ({ form, title,account_desc, submit_title, submit_body }) => 
           </Field>
         </div>
 
-        <Button secondary className="btn" title="Submit" />
+        <Button secondary className="btn" title="Submit" aria-label="submit" />
       </Form>
     </Formik>
   </div>

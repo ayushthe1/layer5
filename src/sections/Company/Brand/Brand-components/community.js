@@ -25,7 +25,7 @@ const CommunityBrand = () => {
         </Col>
         <Col xs={12} sm={6} className="download-button">
           <a href="/brand/meshmate-brand-kit.zip">
-            <Button primary title="Download Logo Assets" external={true}>
+            <Button aria-label="download" primary title="Download Logo Assets" external={true}>
               <FiDownloadCloud size={21} className="icon-left" />
             </Button>
           </a>

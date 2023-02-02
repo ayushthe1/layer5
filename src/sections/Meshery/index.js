@@ -30,10 +30,10 @@ const MesheryPage = () => {
                   {/* Meshery is the cloud native manager. <br /> */}
                   Confidently design, deploy, and operate your infrastructure and workloads with Meshery.
                 </p>
-                <Button primary className="banner-btn" title="How Meshery Works" url="./operating-service-meshes">
+                <Button aria-label="meshery works" primary className="banner-btn" title="How Meshery Works" url="./operating-service-meshes">
                   <GiClockwork size={21} className="button-icon" />
                 </Button>
-                <Button secondary className="banner-btn" title="Run Meshery" url="./getting-started">
+                <Button aria-label="run meshery" secondary className="banner-btn" title="Run Meshery" url="./getting-started">
                   <FiDownloadCloud size={21} className="button-icon" />
                 </Button>
               </Col>

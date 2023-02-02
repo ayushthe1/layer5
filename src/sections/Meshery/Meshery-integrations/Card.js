@@ -14,6 +14,7 @@ const Card = () => {
         <p>Meshery is an extensible  platform with many purpose-built extension points. Use Meshery’s REST API or its GraphQL API both of which allow you to connect to any Kubernetes-native app.</p>
         <Button
           secondary
+          aria-label="learn"
           title="Learn about Extension Points"
           url="https://docs.meshery.io/extensibility"
         />

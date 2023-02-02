@@ -79,7 +79,7 @@ const NewcomersGuide = ({ theme }) => {
               <p>Help us get to know you, so that we can highlight projects and initiatives that align with your interests. Fill-in a community member form. Gain access to community resources.</p>
             </Col>
             <Col sm={12} lg={6}>
-              <Button primary className="newcomers-form" title="Submit a Member Form" url="/newcomer" external={false} />
+              <Button primary aria-label="newcomer form" className="newcomers-form" title="Submit a Member Form" url="/newcomer" external={false} />
             </Col>
             <Col sm={12} lg={6}>
               <img src={theme === "dark" ? CommunityWhiteImage1 : CommunityImage1} className="finding-an-issue" alt="Community Image" />

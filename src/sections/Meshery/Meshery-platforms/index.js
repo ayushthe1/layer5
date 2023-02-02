@@ -209,6 +209,7 @@ const MesheryPlatforms = () => {
           {supported_platforms.map((platform, index) => (
             <Col xs={6} sm={4} md={3} lg={2} key={platform.name}>
               <Button
+                aria-label="image"
                 className={currentPlatform.name && currentPlatform.name === supported_platforms[index].name
                   ? "single-platform single-platform-selected " : "single-platform "}
                 onClick={() => changeCurrentPlatform(index)}>

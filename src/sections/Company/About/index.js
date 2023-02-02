@@ -173,6 +173,7 @@ const About = ({ theme }) => {
                 primary
                 id="contact"
                 className="about-button"
+                aria-label="about"
                 url="/company/contact"
                 title="Contact Us"
                 external={false}

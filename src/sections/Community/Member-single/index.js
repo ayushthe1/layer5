@@ -233,6 +233,7 @@ const MemberSingle = ({ frontmatter }) => {
               <p> Would you Like a Member Profile?</p>
               <Button
                 primary
+                aria-label="start contributing"
                 title="Start Contributing Today"
                 url="/community"
               />

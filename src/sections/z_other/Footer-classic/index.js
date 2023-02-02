@@ -34,7 +34,7 @@ const FooterClassic = () => {
               </Link>
               <form className="subscribe-form">
                 <input type="text" placeholder="Search here..." />
-                <Button>
+                <Button aria-label="empty">
                   {/* <FaEnvelope /> */}
                 </Button>
               </form>

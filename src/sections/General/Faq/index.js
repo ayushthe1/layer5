@@ -89,7 +89,7 @@ const Faq = (props) => {
                       faq.answer.length >= 1 ? <ul>{faq.answer.map((ans, id) => (<li key={id}><p key={id}>{ans}</p></li>))}</ul> : <br />
                     }
                     <div className="faqbutton">
-                      {faq.link && <Button primary className="faqbutton" url={faq.link} title={faq.linktext} external={false} />}
+                      {faq.link && <Button primary className="faqbutton" url={faq.link} aria-label={faq.linktext} title={faq.linktext} external={false} />}
                     </div>
                   </AccordionBody>
                 </AccordionItem>

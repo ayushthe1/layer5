@@ -210,6 +210,7 @@ const ContactForm = () => {
                   type="submit"
                   className="btn-next"
                   title="Submit"
+                  aria-label="submit"
                 />
               </div>
             </div>

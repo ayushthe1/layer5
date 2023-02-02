@@ -12,7 +12,7 @@ const WorkshopCardContent = ({ frontmatter, content, ID, id }) => {
           </div>
         </div>
         <div className="upcomingContainer">
-          {frontmatter.status === "delivered" ? "" : <button className="upcoming">Upcoming...</button>}
+          {frontmatter.status === "delivered" ? "" : <button aria-label="Upcoming" className="upcoming">Upcoming...</button>}
         </div>
         <div className={content && ID === id ? "card-content-open" : "card-content"}>
           <div>

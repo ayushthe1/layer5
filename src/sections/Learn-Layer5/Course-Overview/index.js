@@ -87,12 +87,14 @@ const CourseOverview = ({ course, chapters, serviceMeshesList }) => {
           <Button
             title={hasBookmark ? "Start Again" : "Get Started"}
             url={`istio/${course.frontmatter.toc[0]}`}
+            aria-label="start again"
           />
           {hasBookmark && (
             <Button
               className="start-again-button"
               primary
               title="Resume"
+              aria-label="resume"
               url={bookmarkUrl}
             />
           )}

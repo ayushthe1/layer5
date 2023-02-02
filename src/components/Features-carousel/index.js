@@ -85,6 +85,7 @@ const Feature = ({ children, title, active, onClick, learnMoreLink, id, Element 
           onClick={() => onClick(id)}
           aria-expanded={active}
           aria-controls={`feature-${id}`}
+          aria-label={title}
         >
           {title}
         </button>

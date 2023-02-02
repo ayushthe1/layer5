@@ -11,7 +11,7 @@ const DoYouNeedService = ({ onClick }) => {
           <br/><br/>
           <span className="description">Let's find out.</span>
         </div>
-        <button id="action" onClick={onClick}>
+        <button aria-label="find out" id="action" onClick={onClick}>
                     Let's find out
         </button>
       </div>

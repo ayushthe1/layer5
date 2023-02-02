@@ -13,12 +13,12 @@ import TestimonialWrapper from "./testimonial.style";
 
 const Testimonial = () => {
   const ArrowLeft = ({ ...props }) => (
-    <button {...props} className="slick-arrow slick-prev-icon">
+    <button {...props} className="slick-arrow slick-prev-icon" aria-label="prev-icon">
       <IoIosArrowRoundBack />
     </button>
   );
   const ArrowRight = ({ ...props }) => (
-    <button {...props} className="slick-arrow slick-next-icon">
+    <button {...props} className="slick-arrow slick-next-icon" aria-label="next-icon">
       <IoIosArrowRoundForward />
     </button>
   );

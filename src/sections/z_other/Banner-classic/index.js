@@ -40,10 +40,10 @@ const BannerClassic = () => {
             </p>
 
             <VintageBox right={true} vintageOne={true}>
-              <Button className="banner-btn one" title="View on Google Play">
+              <Button aria-label="view google play" className="banner-btn one" title="View on Google Play">
                 <FaDownload className="icon-left" />
               </Button>
-              <Button className="banner-btn two" title="Watch Now">
+              <Button aria-label="watch now" className="banner-btn two" title="Watch Now">
                 <FaPlay className="icon-left" />
               </Button>
             </VintageBox>

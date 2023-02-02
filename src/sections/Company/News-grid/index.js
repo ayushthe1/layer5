@@ -84,8 +84,8 @@ const NewsGrid = ({ data, theme }) => {
           <div className="news-grid-wrapper">
             <div className="filter-buttons">
               <div className="button-container">
-                <Button id="coverage" onClick={filterCoverage} className="coverage-button">Coverage</Button>
-                <Button id="press-release" onClick={filterPressRelease} className="press-release-button">Press-Release</Button>
+                <Button aria-label="coverage" id="coverage" onClick={filterCoverage} className="coverage-button">Coverage</Button>
+                <Button aria-label="coverage" id="press-release" onClick={filterPressRelease} className="press-release-button">Press-Release</Button>
               </div>
               <div className="search">
                 <div className="searchBox">

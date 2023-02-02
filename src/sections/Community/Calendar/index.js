@@ -147,7 +147,7 @@ const Calendar = () => {
                 Begin your journey by <a href="http://slack.layer5.io">joining the community Slack</a>. Then, use the resources linked in our <Link to="/community/newcomers">Contributor's Journey Map </Link>
                 and engage in the community and projects.
               </p>
-              <Button primary title="See All Newcomers Resources" url="/community/newcomers">
+              <Button primary title="See All Newcomers Resources" aria-label="Newcomers Resources" url="/community/newcomers">
                 <FaUsers size={21} className="icon-left" />
               </Button>
             </div>

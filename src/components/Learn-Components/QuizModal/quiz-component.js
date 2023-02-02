@@ -16,7 +16,7 @@ const Instruction = ({ closeInstruction }) => {
           <li>The total score for the quiz is based on your responses to all questions.</li>
           <li>In case you are not satisfied with the results, you can retake the quiz until you get the best results.</li>
         </ul>
-        <button className="ins__btn" onClick={closeInstruction}>Start</button>
+        <button aria-label="start" className="ins__btn" onClick={closeInstruction}>Start</button>
       </div>
     </section>
   );
@@ -32,6 +32,7 @@ const ResultBox = ({ score, resetQuiz,correct, incorrect,total  }) => (
       <p>Total Question : <span>{total}</span></p>
       <div onClick={resetQuiz}>
         <Button secondary title="Go to Learning Paths"
+          aria-label="go to learning paths"
           url={"/learn/learning-paths"}
           external={false} />
       </div>

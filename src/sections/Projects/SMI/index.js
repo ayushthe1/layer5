@@ -30,7 +30,7 @@ const SMIPage = () => {
               <p>
                 Meshery is <span>the official</span> SMI Conformance Validator. Use Meshery's diagnostic tool to verify that your service mesh's behavior in an accessible and non-destructive manner.
               </p>
-              <Button primary title="Run SMI Conformance" url="/blog/programs/starting-smi-conformance-testing-with-meshery" />
+              <Button aria-label="run smi" primary title="Run SMI Conformance" url="/blog/programs/starting-smi-conformance-testing-with-meshery" />
             </Col>
             <Col lg={4} md={12} sm={12} className="hero_img_col">
               <div className="hero-img">
@@ -83,7 +83,7 @@ const SMIPage = () => {
                 </p>
               </Col>
               <Col lg={4}>
-                <Button primary title="Run SMI Conformance" url="/blog/programs/starting-smi-conformance-testing-with-meshery"></Button>
+                <Button aria-label="run smi" primary title="Run SMI Conformance" url="/blog/programs/starting-smi-conformance-testing-with-meshery"></Button>
               </Col>
             </Row>
           </div>
@@ -104,7 +104,7 @@ const SMIPage = () => {
               <p>
                     Checkout the current status of the support for SMI Conformance Tests of all service meshes in our landscape page.
               </p>
-              <Button primary url="/service-mesh-landscape#smi" external={false}>
+              <Button aria-label="check out" primary url="/service-mesh-landscape#smi" external={false}>
                       Check it Out
               </Button>
             </div>

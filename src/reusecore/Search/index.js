@@ -39,6 +39,7 @@ const SearchBox = ({
           minLength={1}
           debounceTimeout={500}
           onChange={(e) => handleChange(e)}
+          aria-label="search"
           placeholder="Search..."
         />
         <Button>

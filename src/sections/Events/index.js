@@ -18,10 +18,10 @@ const Meetups = ({ data, pageContext, theme }) => {
       <UpcomingEvents data={data.allUpcoming} />
       <Container>
         <div className="filterBtns">
-          <Button className={active == "all" ? "active" : ""} onClick={() => setActive("all")} title="All" />
-          <Button className={active == "events" ? "active" : ""} onClick={() => setActive("events")} title="Events" />
-          <Button className={active == "workshops" ? "active" : ""} onClick={() => setActive("workshops")} title="Workshops" />
-          <Button className={active == "meetups" ? "active" : ""} onClick={() => setActive("meetups")} title="MeetUps" />
+          <Button className={active == "all" ? "active" : ""} onClick={() => setActive("all")} aria-label="all" title="All" />
+          <Button className={active == "events" ? "active" : ""} onClick={() => setActive("events")} aria-label="events" title="Events" />
+          <Button className={active == "workshops" ? "active" : ""} onClick={() => setActive("workshops")} aria-label="workshops" title="Workshops" />
+          <Button className={active == "meetups" ? "active" : ""} onClick={() => setActive("meetups")} aria-label="meetup" title="MeetUps" />
         </div>
         <div>
           <Row>

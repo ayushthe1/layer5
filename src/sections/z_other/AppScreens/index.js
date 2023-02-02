@@ -84,7 +84,7 @@ const AppScreens = () => {
                     <span>See screenshot </span> & engage in this app.
                   </h2>
                 </SectionTitle>
-                <Button title="View on Google Play" />
+                <Button title="View on Google Play" aria-label="view on google play" />
               </div>
             </Col>
             <Col className="app-screen-slider-block" xs={12} lg={6}>
@@ -122,8 +122,8 @@ const AppScreens = () => {
                 </h2>
               </SectionTitle>
               <div className="btn-group">
-                <Button className="btn-outline one" title="View on Google Play" />
-                <Button className="btn-outline two" title="View on App Store" />
+                <Button aria-label="view google play" className="btn-outline one" title="View on Google Play" />
+                <Button aria-label="app store" className="btn-outline two" title="View on App Store" />
               </div>
             </Col>
           </Row>

@@ -148,7 +148,7 @@ const WebBasedForm = () => {
             <label htmlFor="picture" className="form-name">Picture</label>
             <Field type="url" className="text-field" id="picture" name="picture" />
             <p className="para label">Please provide a link to your profile photo. Profile photos are used for <Link to="/community/members">community member profiles</Link> of longstanding community members.</p>
-            <Button secondary type="submit" className="btn" title="Next Step" /> <br /><br /><br /><br />
+            <Button secondary aria-label="submit" type="submit" className="btn" title="Next Step" /> <br /><br /><br /><br />
           </Form>
         </Formik>
       </Container>
@@ -186,8 +186,8 @@ const WebBasedForm = () => {
           </div>
           <br /><br />
           <div className="btn-wrapper">
-            <button onClick={laststep} className="btn-prev"><span className="back">&larr;</span> Previous Step</button>
-            <Button onClick={() => setStepNumber(2)} secondary type="submit" className="btn-next" title="Next Step" />
+            <button onClick={laststep} aria-label="previous step" className="btn-prev"><span className="back">&larr;</span> Previous Step</button>
+            <Button onClick={() => setStepNumber(2)} secondary aria-label="submit" type="submit" className="btn-next" title="Next Step" />
           </div>
         </div>
 
@@ -561,8 +561,8 @@ const WebBasedForm = () => {
 
             <br /><br />
             <div className="btn-wrapper">
-              <button onClick={laststep} className="btn-prev"><span className="back">&larr;</span> Previous Step</button>
-              <Button secondary type="submit" className="btn-next" title="Next Step" />
+              <button onClick={laststep} className="btn-prev" aria-label="back"><span className="back">&larr;</span> Previous Step</button>
+              <Button secondary aria-label="submit" type="submit" className="btn-next" title="Next Step" />
             </div>
             <br /><br />
           </Form>
@@ -631,8 +631,8 @@ const WebBasedForm = () => {
             <Field type="text" className="text-field" name="help" />
             <br /><br />
             <div className="btn-wrapper">
-              <button onClick={laststep} className="btn-prev"><span className="back">&larr;</span> Previous Step</button>
-              <Button secondary type="submit" className="btn-next" title="Complete" />
+              <button onClick={laststep} aria-label="back" className="btn-prev"><span className="back">&larr;</span> Previous Step</button>
+              <Button secondary type="submit" aria-label="submit" className="btn-next" title="Complete" />
             </div>
             <br /><br />
           </Form>
@@ -648,8 +648,8 @@ const WebBasedForm = () => {
           <h2>Welcome to the Layer5 Community!</h2>
           <h4>Resources are on their way. See these in the meantime:</h4>
           <div className="btn-box">
-            <Button primary className="btn-one" type="button" title="Community Handbook" url="https://layer5.io/community/handbook" />
-            <Button secondary className="btn-two" type="button" title="Newcomers Roadmap" url="https://layer5.io/community/newcomers" />
+            <Button primary aria-label="community handbook" className="btn-one" type="button" title="Community Handbook" url="https://layer5.io/community/handbook" />
+            <Button secondary aria-label="roadmap" className="btn-two" type="button" title="Newcomers Roadmap" url="https://layer5.io/community/newcomers" />
           </div>
           <p>We are pleased to have you as a new member!</p>
         </div>

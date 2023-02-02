@@ -75,13 +75,13 @@ const Navigation = (props) => {
             setExpandFilter(!expandFilter);
           }} className="filter-menu-icon">
             {expandFilter ? (
-              <button className="filter-btn">
+              <button aria-label="filter-btn" className="filter-btn">
                 <IoClose className="filter-icon filter-close" />
                 <span>Filters</span>
               </button>
             )  :
               (
-                <button className="filter-btn">
+                <button aria-label="filter-btn" className="filter-btn">
                   <FiFilter className="filter-icon filter-open"/>
                   <span>Filters</span>
                 </button>

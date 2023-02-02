@@ -73,6 +73,7 @@ const CTA_Book = () => {
           <Button
             primary
             className="learn"
+            aria-label="learn"
             title="Learn More"
             url="/learn/service-mesh-books/the-enterprise-path-to-service-mesh-architectures-2nd-edition"
           />

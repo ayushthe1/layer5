@@ -99,7 +99,7 @@ const Projects = ({ theme }) => {
               <div className="text">
                 <h2>Easing Management of the Nighthawk Lifecycle</h2>
                 <p>As with a lot of open source projects, there is a lack of consistent tooling. This makes it difficult to have easily repeatable tests in that the building, deploying, and maintaining of Nighthawk instances (potentially a fleet of Nighthawk instances) is a burden without additional tooling. </p>
-                <Button primary id="learn" type="button" title="Learn More" url="https://getnighthawk.dev" />
+                <Button aria-label="learn" primary id="learn" type="button" title="Learn More" url="https://getnighthawk.dev" />
               </div>
             </Col>
           </Row>
@@ -214,7 +214,7 @@ const Projects = ({ theme }) => {
         <img src={cncf} alt="cncf logo" />
         <p> Participate in the state of the art. <br />
           Join us in the Cloud Native Computing Foundation's Service Mesh Working Group.</p>
-        <Button primary title="Join Us" url="/community/calendar#meetings" />
+        <Button aria-label="join us" primary title="Join Us" url="/community/calendar#meetings" />
       </div>
     </Gnhwrapper>
   );

@@ -39,7 +39,7 @@ const BannerDefault = () => {
                     Layer5 is an empowerer of the developer, the operator, and the service owner
                   </h3>
                   <div className="join-community">
-                    <Button primary className="join-community-button" title="our projects" url="/projects" />
+                    <Button aria-label="our project" primary className="join-community-button" title="our projects" url="/projects" />
                   </div>
                 </SectionTitle>
               </div>
