@@ -22,7 +22,7 @@ const CloudNativeLeaders = () => {
 
       </div>
       <div className="btn-cont">
-        <Button primary title="About Us" url="/company/about" />
+        <Button primary title="About Us" aria-label="about layer5" url="/company/about" />
       </div>
     </CloudNativeWrapper>
   );

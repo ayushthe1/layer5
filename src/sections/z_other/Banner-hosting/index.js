@@ -35,7 +35,7 @@ const BannerHosting = () => {
             <div className="domain-search-block">
               <div className="search-box">
                 <input type="text" placeholder="Search domain" />
-                <Button className="src-btn">
+                <Button className="src-btn" aria-label="search btn">
                   {/* <FaSearch /> */}
                 </Button>
               </div>

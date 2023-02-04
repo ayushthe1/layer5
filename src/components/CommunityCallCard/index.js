@@ -67,7 +67,7 @@ const CommunityCallCard = ({ hero_image }) => {
               <input className="inputrow subscribe-email" type="email" placeholder="Email Address" name="EMAIL" id="mce-EMAIL" required  onInvalid={e => e.target.setCustomValidity("Please fill-in this field")} onInput={e => e.target.setCustomValidity("")} />
             </Col>
             <Col xs={3}>
-              <Button secondary title="Subscribe" id="mc-embedded-subscribe" />
+              <Button secondary title="Subscribe" aria-label="subscribe us" id="mc-embedded-subscribe" />
             </Col>
           </form>
         </Row>

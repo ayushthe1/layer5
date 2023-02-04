@@ -106,7 +106,7 @@ const SoSpecial = ({ theme }) => {
         <Slider {...settings}>
           {
             data.allMdx.nodes.map(({ id, frontmatter, fields }) => (
-              <Button className="special-cont_btn" url={fields.slug} key={id}>
+              <Button aria-label="layer5 in news" className="special-cont_btn" url={fields.slug} key={id}>
                 <div id="special-cont" >
                   <div id="special-cont_img">
                     <Image
@@ -127,7 +127,7 @@ const SoSpecial = ({ theme }) => {
       <div className="so-special-foot">
         <h5>Layer5 provides cloud native management for monoliths and</h5>
         <h5>microservices alike.</h5>
-        <Button className="so-special-foot-btn" primary url="/projects" title="Our Projects" />
+        <Button aria-label="our projects" className="so-special-foot-btn" primary url="/projects" title="Our Projects" />
       </div>
     </SoSpecialWrapper>
   );

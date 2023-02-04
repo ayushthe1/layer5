@@ -27,6 +27,7 @@ const Integrations = ({ theme }) => {
                 <div style={{ marginTop: "20px" }}>
                   <Button
                     primary
+                    aria-label="checkout all integrations"
                     title={"See All"}
                     url="/cloud-native-management/meshery/integrations/"
                   />
