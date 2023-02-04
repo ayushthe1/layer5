@@ -16,6 +16,7 @@ const L404SectionWrapper = styled.section`
         color: gray;
         font-style: italic;
         margin-top: 2.5rem;
+        color: black;
     }
     .button-row{
         display: flex;
