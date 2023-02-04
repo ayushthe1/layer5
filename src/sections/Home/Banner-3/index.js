@@ -31,10 +31,10 @@ const Banner3 = (props) => {
             an open source-first community of cloud native engineers
             </p>
             <VintageBox right={true} vintageOne={true}>
-              <Button primary className="banner-btn one" title="Join in" url="/community">
+              <Button primary className="banner-btn one" aria-label="join the community"  title="Join in" url="/community">
                 <FaMapMarkedAlt size={21} className="icon-left" />
               </Button>
-              <Button primary className="banner-btn two" title="See our Projects" url="/projects">
+              <Button primary className="banner-btn two" title="See our Projects" aria-label="go to projects" url="/projects">
                 <FiDownloadCloud size={21} className="icon-left" />
               </Button>
             </VintageBox>

@@ -260,7 +260,7 @@ const Navigation = ({ theme, themeSetter }) => {
                   <div>
                     <ul>
                       <li>
-                        <Button id="get-started" secondary className="banner-btn two" title="Get Started" url="https://meshery.layer5.io/registration" />
+                        <Button id="get-started" aria-label="signup for layer5" secondary className="banner-btn two" title="Get Started" url="https://meshery.layer5.io/registration" />
                       </li>
                     </ul>
                   </div>
@@ -282,8 +282,8 @@ const Navigation = ({ theme, themeSetter }) => {
 
           </div>
           <div className="meshery-cta">
-            <Button id="get-started" secondary className="banner-btn two" title="Get Started" alt="Signup for Layer5 Cloud"  url="https://meshery.layer5.io/registration" />
-            <Button id="login" secondary className="banner-btn login" title="Login" alt="Login for Layer5 Cloud"  url="https://meshery.layer5.io/login" />
+            <Button id="get-started" secondary className="banner-btn two" title="Get Started" aria-label="signup for layer5" alt="Signup for Layer5 Cloud"  url="https://meshery.layer5.io/registration" />
+            <Button id="login" aria-label="login for layer5" secondary className="banner-btn login" title="Login" alt="Login for Layer5 Cloud"  url="https://meshery.layer5.io/login" />
             <div className="dark-theme-toggle">
               <input id="toggle" className="toggle" type="checkbox" aria-label="toggle-dark-mode" onChange={themeToggler} checked={!themeToggle} />
             </div>

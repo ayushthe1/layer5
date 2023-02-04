@@ -35,6 +35,7 @@ const StewardsOfIndustry = () => {
           primary
           className="section-button"
           title="See our Projects"
+          aria-label="go to projects"
           url="/projects"
         />
       </BgImage>
