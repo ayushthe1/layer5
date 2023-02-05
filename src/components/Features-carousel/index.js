@@ -92,9 +92,9 @@ const Feature = ({ children, title, active, onClick, learnMoreLink, id, Element 
         <span className="heading">{title}</span>
       )}
       <div className="body" id={`feature-${id}`} aria-hidden={!active}>
-        <p tabindex="-1">{children}</p>
+        <p>{children}</p>
         {learnMoreLink && (
-          <Link tabindex="-1" className="learn-more-link" to={learnMoreLink}>
+          <Link tabIndex={active ? 0 : -1} className="learn-more-link" to={learnMoreLink}>
             Learn more <IoIosArrowRoundForward />
           </Link>
         )}
