@@ -21,7 +21,7 @@ const subscribe = () => {
                   <input className="inputrow subscribe-email" type="email" placeholder="Email Address" name="EMAIL" id="mce-EMAIL" required onInvalid={e => e.target.setCustomValidity("Please fill-in this field")} onInput={e => e.target.setCustomValidity("")} />
                 </Col>
                 <div>
-                  <Button secondary title="Subscribe" id="mc-embedded-subscribe" />
+                  <Button secondary title="Subscribe" id="mc-embedded-subscribe" />1
                 </div>
               </Row>
             </Col>
