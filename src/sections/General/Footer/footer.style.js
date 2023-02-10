@@ -102,7 +102,7 @@ const FooterWrapper = styled.section`
 
 		button {
 			height: 3.5rem;
-			font-weight: 600;
+			color: black;
 		}
 	}
 
