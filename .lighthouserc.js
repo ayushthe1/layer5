@@ -2,7 +2,6 @@ module.exports = {
     "ci": {
       "collect": {
         "staticDistDir": "./public",
-        "url" : ["http://localhost/*"],
         "numberOfRuns": 1,
       },
       "assert": {
