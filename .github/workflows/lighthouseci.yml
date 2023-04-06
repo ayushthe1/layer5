@@ -7,8 +7,6 @@ on:
       - "*.github/**"
 jobs:
   generate_urls:
-    runs-on: ubuntu-latest
-    steps:
     - run: node ./genrate_url.js
   lighthouseci:
     runs-on: ubuntu-latest
