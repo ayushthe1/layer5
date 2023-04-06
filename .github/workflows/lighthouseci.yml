@@ -1,5 +1,5 @@
 - name: Generate URLs
-  run: node ../../sample.js
+  run: node ./genrate_url.js
 
 - name: lighthouseci
   on: 
@@ -16,7 +16,7 @@
         - uses: actions/checkout@v2
         - uses: actions/setup-node@v1
           with:
-           urls: |
+            urls: |
              ${fromJson(file('./urls.json'))}
            node-version: 16
         - run: npm install && npm install -g @lhci/cli@0.8.x
