@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - working-directory: .github/workflows/
-        run: node .github/workflows/genrate_url.js
+        run: node generate_urls
   lighthouseci:
     runs-on: ubuntu-latest
     steps:
