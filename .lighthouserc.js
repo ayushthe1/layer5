@@ -2,7 +2,8 @@ module.exports = {
     "ci": {
       "collect": {
         "staticDistDir": "./public",
-        "url" : ["http://localhost/",]
+        "url" : ["http://localhost/*"],
+        "numberOfRuns": 1,
       },
       "assert": {
         "preset": "lighthouse:no-pwa",
