@@ -1,23 +1,22 @@
 name: lighthouseci
-on:
-  workflow_dispatch: null
+on: 
+  workflow_dispatch:
   pull_request:
     paths-ignore:
       - "*.md"
       - "*.github/**"
-  jobs:
-    generate_urls:
-      runs-on: ubuntu-latest
-      run: node ./genrate_url.js
-    lighthouseci:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-node@v1
-          with:
-            urls: |
-              ${fromJson(file('./urls.json'))}
-            node-version: 16
-        - run: npm install && npm install -g @lhci/cli@0.8.x
-        - run: npm run build
-        - run: lhci autorun
+      
+jobs:
+  generate_urls:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node ./genrate_url.js
+  lighthouseci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - run: npm install && npm install -g @lhci/cli@0.8.x
+      - run: npm run build
