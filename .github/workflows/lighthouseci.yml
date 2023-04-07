@@ -15,12 +15,6 @@ jobs:
       - name: Install dependencies
         run: npm install
       - run: npm run build
-      - name: ls 1
-        run: ls -a
-      - name: ls 2
-        run: ls ../ -a
-      - name: ls 3
-        run: ls ../../ -a
       - name: Run script
         run: node .github/workflows/genrate_url.js
   lighthouseci:
@@ -30,8 +24,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
+          urls: |
+              ${fromJson(file('./urls.json'))}
       - run: npm install && npm install -g @lhci/cli@0.8.x
       - run: npm run build
-      - name: ls 4
-        run: ls -a
+      - run: lhci autorun
       
