@@ -7,16 +7,6 @@ on:
       - "*.github/**"
       
 jobs:
-  generate_urls:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - run: npm run build
-      - name: Run script
-        run: node .github/workflows/genrate_url.js
   lighthouseci:
     runs-on: ubuntu-latest
     steps:
@@ -24,9 +14,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-          urls: |
-              ${fromJson(file('./urls.json'))}
       - run: npm install && npm install -g @lhci/cli@0.8.x
       - run: npm run build
-      - run: lhci autorun
+      - name: Generate URLs
+        run: node .github/workflows/generate_url.js
+      - run: lhci autorun --urls="$(cat urls.json)"
       
